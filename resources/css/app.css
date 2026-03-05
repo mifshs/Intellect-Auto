@@ -9,3 +9,62 @@
     --font-sans: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
         'Segoe UI Symbol', 'Noto Color Emoji';
 }
+
+* {
+    font-family: "Inter", sans-serif;
+}
+
+.ibm {
+    font-family: "IBM Plex Sans", sans-serif;
+ 
+}
+
+.container {
+    max-width: 1361px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.grey100 {
+   color: #F7F7F7;
+}
+
+.grey200 {
+   color: #F1F1F1;
+}
+
+.grey300 {
+   color: #E1E1E1;
+}
+
+.grey400 {
+   color: #929292;
+}
+
+.grey500 {
+   color: #707070;
+}
+
+.grey600 {
+   color: #313131;
+}
+
+.distractive {
+    color: #B3261E;
+}
+
+.green {
+    color: #C6CC11;
+}
+
+.blue {
+    color: #0075B1;
+}
+
+.accentHover {
+    color: #006598;
+}
+
+.general {
+    color: #0B0D0D;
+}
