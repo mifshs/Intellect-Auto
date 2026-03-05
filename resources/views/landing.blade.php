@@ -12,6 +12,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
 </head>
 <body>
+    <x-header>
+    </x-header>
     <div class="bg-black text-white h-[700px] flex items-center justify-center">
         <div class="container">
             <div>
