@@ -94,8 +94,8 @@
                             <h3 class="grey600 text-[20px] font-semibold">Бесплатная доставка при заказе от 10 000 ₽</h3>
                         </div>
                     </div>
-                    <img src="{{ asset('storage/images/gear.png') }}" alt="палка">
-                    <span class="blue flex flex-row items-center mb-4 gap-2">Подробнее <img src="{{ asset('storage/images/arrow.png') }}" alt="палка"></span>
+                    <img class="mb-4" src="{{ asset('storage/images/gear.png') }}" alt="палка">
+                    <span class="blue flex flex-row items-center gap-2">Подробнее <img src="{{ asset('storage/images/arrow.png') }}" alt="палка"></span>
                 </div>
             </div>
 
@@ -284,6 +284,76 @@
             </form>
         </div>
     </div>
+
+        <div class="pt-5 mb-10">
+            <div class="text-[24px] font-medium container flex flex-row items-center justify-between pb-15">
+                Новости
+            <span class="flex items-center gap-5">
+                    <button class="swiper-prev cursor-pointer hover:opacity-70 transition">
+                        <img src="{{ asset('storage/images/arrow2.png') }}" alt="назад">
+                    </button>
+                    
+                    <img src="{{ asset('storage/images/line.png') }}" alt="разделитель">
+                    
+                    <button class="swiper-next cursor-pointer hover:opacity-70 transition">
+                        <img class="scale-x-[-1]" src="{{ asset('storage/images/arrow2.png') }}" alt="вперед">
+                    </button>
+                </span>
+            </div>
+
+            <style>
+                .swiper {
+                width: 100%;
+                height: 100%;
+                }
+
+                .swiper-slide {
+                text-align: center;
+                font-size: 18px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                }
+
+                .swiper-slide img {
+                display: block;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                }
+            </style>
+
+            <div class="swiper mySwiper1 container">
+                <div class="swiper-wrapper pb-10">
+                    <div class="swiper-slide"><x-news-card></x-news-card></div>
+                    <div class="swiper-slide"><x-news-card></x-news-card></div>
+                    <div class="swiper-slide"><x-news-card></x-news-card></div>
+                    <div class="swiper-slide"><x-news-card></x-news-card></div>
+                    <div class="swiper-slide"><x-news-card></x-news-card></div>
+                    <div class="swiper-slide"><x-news-card></x-news-card></div>
+                    <div class="swiper-slide"><x-news-card></x-news-card></div>
+                    <div class="swiper-slide"><x-news-card></x-news-card></div>
+                </div>
+            </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+
+        <script>
+                var swiper = new Swiper(".mySwiper1", {
+                slidesPerView: 4,
+                spaceBetween: 30,
+                navigation: {
+                nextEl: '.swiper-next',
+                prevEl: '.swiper-prev',
+                },
+                pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+                },
+                });
+        </script>
+    </div>
+
     <x-footer>
     </x-footer>
 
