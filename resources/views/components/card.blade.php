@@ -18,6 +18,6 @@
         <span class="line-through grey500 text-[12px]">15 000₽</span>
     </div>
     <div class="flex  ">
-        <button type="button" class="px-[12px] py-[8px] rounded-[6px] hover:bg-[#006598] bg-[#0075B1] transition duration-150 ease-in-out font-medium text-[14px] text-white font-normal">Купить</button>
+        <button type="button" class="px-[12px] py-[8px] rounded-[6px] hover:bg-[#006598]  active:scale-95 cursor-pointer bg-[#0075B1] transition duration-150 ease-in-out font-medium text-[14px] text-white font-normal">Купить</button>
     </div>
 </div>

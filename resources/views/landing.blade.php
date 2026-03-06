@@ -22,7 +22,7 @@
                 <h1 class="ibm text-[72px] font-bold text-left text-white w-[822px] mb-5 leading-18">Запчасти для коммерческой техники и спецтехники</h1>
                 <h3 class="w-[640px] mb-10 font-normal text-[16px]">Ваш транспорт — это инструмент, который должен работать, а не стоять в ремонте. 
         Мы помогаем механикам, автопаркам и сервисным центрам держать технику в строю, поставляя качественные запчасти для грузовиков, автобусов, спецтехники и прицепов — точно в срок и по лучшей цене.</h3>
-                <button type="button" class="px-[48px] py-[12px] rounded-[6px] hover:bg-[#006598] bg-[#0075B1] transition duration-150 ease-in-out font-medium text-[18px]">Стать клиентом</button>
+                <button type="button" class="px-[48px] py-[12px] rounded-[6px] hover:bg-[#006598]  active:scale-95 cursor-pointer bg-[#0075B1] transition duration-150 ease-in-out font-medium text-[18px]">Стать клиентом</button>
         </div>
 
         </div>
@@ -82,7 +82,13 @@
                             -30%
                         </div>
                     </div>
-                    <span class="blue flex flex-row items-center mt-35 mb-15 gap-2">Подробнее <img src="{{ asset('storage/images/arrow.png') }}" alt="палка"></span>
+                   <span class="blue flex flex-row items-center mt-35 mb-15 gap-2 group cursor-pointer select-none">
+                    <span class="transition-all duration-200 group-hover:font-semibold group-hover:text-blue-700 group-active:font-bold group-active:text-blue-800 group-active:scale-95">Подробнее</span>
+                    <img src="{{ asset('storage/images/arrow.png') }}" alt="стрелка" 
+                        class="transition-all duration-200 
+                        group-hover:translate-x-2 group-hover:scale-110
+                        group-active:translate-x-3 group-active:scale-90">
+                    </span>
                 </div>
             </div>
 
@@ -94,8 +100,14 @@
                             <h3 class="grey600 text-[20px] font-semibold">Бесплатная доставка при заказе от 10 000 ₽</h3>
                         </div>
                     </div>
-                    <img src="{{ asset('storage/images/gear.png') }}" alt="палка">
-                    <span class="blue flex flex-row items-center mb-4 gap-2">Подробнее <img src="{{ asset('storage/images/arrow.png') }}" alt="палка"></span>
+                    <img class="mb-4" src="{{ asset('storage/images/gear.png') }}" alt="палка">
+                    <span class="blue flex flex-row items-center gap-2 group cursor-pointer select-none">
+                    <span class="transition-all duration-200 group-hover:font-semibold group-hover:text-blue-700 group-active:font-bold group-active:text-blue-800 group-active:scale-95">Подробнее</span>
+                    <img src="{{ asset('storage/images/arrow.png') }}" alt="стрелка" 
+                        class="transition-all duration-200 
+                        group-hover:translate-x-2 group-hover:scale-110
+                        group-active:translate-x-3 group-active:scale-90">
+                    </span>
                 </div>
             </div>
 
@@ -107,7 +119,20 @@
                             <h3 class="text-white text-[20px] font-normal w-[163px]">Сезонное ТО со скидкой</h3>
                         </div>
                     </div>
-                    <span class="flex flex-row items-center mt-10 gap-2 text-white">Подробнее <img src="{{ asset('storage/images/icon-white.png') }}" alt="палка"></span>
+                   <span class="flex flex-row items-center mt-10 gap-2 text-white group cursor-pointer select-none">
+   
+    <span class="transition-all duration-200 
+                 group-hover:font-semibold group-hover:text-black
+                 group-active:font-bold group-active:text-black group-active:scale-95">
+        Подробнее
+    </span>
+    <img src="{{ asset('storage/images/icon-white.png') }}" alt="стрелка" 
+         class="transition-all duration-200 
+                group-hover:translate-x-2 group-hover:scale-110
+                group-active:translate-x-3 group-active:scale-90
+                group-hover:brightness-0  /* Делает стрелку черной */
+                group-active:brightness-0">
+</span>
                     <img class="absolute top-21 right-11" src="{{ asset('storage/images/tire.png') }}" alt="палка">
                 </div>
 
@@ -118,7 +143,13 @@
                             <h3 class="grey600 text-[20px] font-medium w-[163px]">Второй товар — со скидкой 50%</h3>
                         </div>
                     </div>
-                    <span class="flex flex-row items-center mt-6 gap-2 blue">Подробнее <img src="{{ asset('storage/images/arrow.png') }}" alt="палка"></span>
+                   <span class="blue flex flex-row items-center mt-6 gap-2 group cursor-pointer select-none">
+                    <span class="transition-all duration-200 group-hover:font-semibold group-hover:text-blue-700 group-active:font-bold group-active:text-blue-800 group-active:scale-95">Подробнее</span>
+                    <img src="{{ asset('storage/images/arrow.png') }}" alt="стрелка" 
+                        class="transition-all duration-200 
+                        group-hover:translate-x-2 group-hover:scale-110
+                        group-active:translate-x-3 group-active:scale-90">
+                    </span>
                 </div>
             </div>
         </div>
@@ -128,14 +159,14 @@
         <div class="text-[24px] font-medium container flex flex-row items-center justify-between pb-15">
             Популярные товары 
             <span class="flex items-center gap-5">
-                <button class="swiper-prev cursor-pointer hover:opacity-70 transition">
-                    <img src="{{ asset('storage/images/arrow2.png') }}" alt="назад">
+                <button class="swiper-prev cursor-pointer hover:opacity-70 transition ">
+                    <img src="{{ asset('storage/images/arrow2.png') }}" alt="назад" class="hover:scale-115 active:scale-85">
                 </button>
                 
                 <img src="{{ asset('storage/images/line.png') }}" alt="разделитель">
                 
                 <button class="swiper-next cursor-pointer hover:opacity-70 transition">
-                    <img class="scale-x-[-1]" src="{{ asset('storage/images/arrow2.png') }}" alt="вперед">
+                    <img class=" hover:scale-115 hover:scale-x-[-1] active:scale-85 active:scale-x-[-1] scale-x-[-1]" src="{{ asset('storage/images/arrow2.png') }}" alt="вперед" >
                 </button>
             </span>
         </div>
@@ -272,7 +303,7 @@
 
                     <div>
                         <button type="submit" 
-                            class="w-full lg:w-auto hover:bg-[#006598] bg-[#0075B1] transition duration-150 ease-in-out text-white font-medium py-3 px-8 rounded-[6px] transition duration-150 ease-in-out whitespace-nowrap">
+                            class="w-full lg:w-auto hover:bg-[#006598]  active:scale-95 cursor-pointer bg-[#0075B1] transition duration-150 ease-in-out text-white font-medium py-3 px-8 rounded-[6px] transition duration-150 ease-in-out whitespace-nowrap">
                             Отправить
                         </button>
                     </div>
@@ -284,7 +315,78 @@
             </form>
         </div>
     </div>
+
+        <div class="pt-5 mb-10">
+            <div class="text-[24px] font-medium container flex flex-row items-center justify-between pb-15">
+                Новости
+            <span class="flex items-center gap-5">
+                    <button class="swiper-prev cursor-pointer hover:opacity-70 transition">
+                        <img src="{{ asset('storage/images/arrow2.png') }}" alt="назад" class=" hover:scale-115 active:scale-85">
+                    </button>
+                    
+                    <img src="{{ asset('storage/images/line.png') }}" alt="разделитель">
+                    
+                    <button class="swiper-next cursor-pointer hover:opacity-70 transition">
+                        <img class=" hover:scale-115 hover:scale-x-[-1] active:scale-85 active:scale-x-[-1] scale-x-[-1]" src="{{ asset('storage/images/arrow2.png') }}" alt="вперед">
+                    </button>
+                </span>
+            </div>
+
+            <style>
+                .swiper {
+                width: 100%;
+                height: 100%;
+                }
+
+                .swiper-slide {
+                text-align: center;
+                font-size: 18px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                }
+
+                .swiper-slide img {
+                display: block;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                }
+            </style>
+
+            <div class="swiper mySwiper1 container">
+                <div class="swiper-wrapper pb-10">
+                    <div class="swiper-slide"><x-news-card></x-news-card></div>
+                    <div class="swiper-slide"><x-news-card></x-news-card></div>
+                    <div class="swiper-slide"><x-news-card></x-news-card></div>
+                    <div class="swiper-slide"><x-news-card></x-news-card></div>
+                    <div class="swiper-slide"><x-news-card></x-news-card></div>
+                    <div class="swiper-slide"><x-news-card></x-news-card></div>
+                    <div class="swiper-slide"><x-news-card></x-news-card></div>
+                    <div class="swiper-slide"><x-news-card></x-news-card></div>
+                </div>
+            </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+
+        <script>
+                var swiper = new Swiper(".mySwiper1", {
+                slidesPerView: 4,
+                spaceBetween: 30,
+                navigation: {
+                nextEl: '.swiper-next',
+                prevEl: '.swiper-prev',
+                },
+                pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+                },
+                });
+        </script>
+    </div>
+
     <x-footer>
     </x-footer>
+
 </body>
 </html>
