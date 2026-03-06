@@ -68,3 +68,10 @@
 .general {
     color: #0B0D0D;
 }
+
+@media(max-width: 1400px) {
+    .container {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
