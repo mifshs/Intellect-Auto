@@ -9,10 +9,10 @@
                     <img src="{{ asset('storage/images/Icon.png') }}" alt="треугольник" class="w-[6.67px] h-[3.33px] ml-[4px]">
                 </div>
                 <div class="flex  grid-cols-4 gap-x-10">
-                    <p>Акции</p>
-                    <p>О компании</p>
-                    <p>Адреса</p>
-                    <p>Контакты</p>
+                    <a href="#">Акции</a>
+                    <a href="#">О компании</a>
+                    <a href="#">Адреса</a>
+                    <a href="#">Контакты</a>
                 </div>
                 <div>
                     8 (900) 000 00 00
