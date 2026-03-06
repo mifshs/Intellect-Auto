@@ -138,7 +138,13 @@
                             -30%
                         </div>
                     </div>
-                    <span class="blue flex flex-row items-center mt-35 mb-15 gap-2">Подробнее <img src="{{ asset('storage/images/arrow.png') }}" alt="палка"></span>
+                   <span class="blue flex flex-row items-center mt-35 mb-15 gap-2 group cursor-pointer select-none">
+                    <span class="transition-all duration-200 group-hover:font-semibold group-hover:text-blue-700 group-active:font-bold group-active:text-blue-800 group-active:scale-95">Подробнее</span>
+                    <img src="{{ asset('storage/images/arrow.png') }}" alt="стрелка" 
+                        class="transition-all duration-200 
+                        group-hover:translate-x-2 group-hover:scale-110
+                        group-active:translate-x-3 group-active:scale-90">
+                    </span>
                 </div>
             </div>
 
@@ -151,7 +157,13 @@
                         </div>
                     </div>
                     <img class="mb-4" src="{{ asset('storage/images/gear.png') }}" alt="палка">
-                    <span class="blue flex flex-row items-center gap-2">Подробнее <img src="{{ asset('storage/images/arrow.png') }}" alt="палка"></span>
+                    <span class="blue flex flex-row items-center gap-2 group cursor-pointer select-none">
+                    <span class="transition-all duration-200 group-hover:font-semibold group-hover:text-blue-700 group-active:font-bold group-active:text-blue-800 group-active:scale-95">Подробнее</span>
+                    <img src="{{ asset('storage/images/arrow.png') }}" alt="стрелка" 
+                        class="transition-all duration-200 
+                        group-hover:translate-x-2 group-hover:scale-110
+                        group-active:translate-x-3 group-active:scale-90">
+                    </span>
                 </div>
             </div>
 
@@ -163,7 +175,20 @@
                             <h3 class="text-white text-[20px] font-normal w-[163px]">Сезонное ТО со скидкой</h3>
                         </div>
                     </div>
-                    <span class="flex flex-row items-center mt-10 gap-2 text-white">Подробнее <img src="{{ asset('storage/images/icon-white.png') }}" alt="палка"></span>
+                   <span class="flex flex-row items-center mt-10 gap-2 text-white group cursor-pointer select-none">
+   
+    <span class="transition-all duration-200 
+                 group-hover:font-semibold group-hover:text-black
+                 group-active:font-bold group-active:text-black group-active:scale-95">
+        Подробнее
+    </span>
+    <img src="{{ asset('storage/images/icon-white.png') }}" alt="стрелка" 
+         class="transition-all duration-200 
+                group-hover:translate-x-2 group-hover:scale-110
+                group-active:translate-x-3 group-active:scale-90
+                group-hover:brightness-0  /* Делает стрелку черной */
+                group-active:brightness-0">
+</span>
                     <img class="absolute top-21 right-11" src="{{ asset('storage/images/tire.png') }}" alt="палка">
                 </div>
 
@@ -174,7 +199,13 @@
                             <h3 class="grey600 text-[20px] font-medium w-[163px]">Второй товар — со скидкой 50%</h3>
                         </div>
                     </div>
-                    <span class="flex flex-row items-center mt-6 gap-2 blue">Подробнее <img src="{{ asset('storage/images/arrow.png') }}" alt="палка"></span>
+                   <span class="blue flex flex-row items-center mt-6 gap-2 group cursor-pointer select-none">
+                    <span class="transition-all duration-200 group-hover:font-semibold group-hover:text-blue-700 group-active:font-bold group-active:text-blue-800 group-active:scale-95">Подробнее</span>
+                    <img src="{{ asset('storage/images/arrow.png') }}" alt="стрелка" 
+                        class="transition-all duration-200 
+                        group-hover:translate-x-2 group-hover:scale-110
+                        group-active:translate-x-3 group-active:scale-90">
+                    </span>
                 </div>
             </div>
         </div>
@@ -184,14 +215,14 @@
         <div class="text-[24px] font-medium container flex flex-row items-center justify-between pb-15">
             Популярные товары 
             <span class="flex items-center gap-5">
-                <button class="swiper-prev cursor-pointer hover:opacity-70 transition">
-                    <img src="{{ asset('storage/images/arrow2.png') }}" alt="назад">
+                <button class="swiper-prev cursor-pointer hover:opacity-70 transition ">
+                    <img src="{{ asset('storage/images/arrow2.png') }}" alt="назад" class="hover:scale-115 active:scale-85">
                 </button>
                 
                 <img src="{{ asset('storage/images/line.png') }}" alt="разделитель">
                 
                 <button class="swiper-next cursor-pointer hover:opacity-70 transition">
-                    <img class="scale-x-[-1]" src="{{ asset('storage/images/arrow2.png') }}" alt="вперед">
+                    <img class=" hover:scale-115 hover:scale-x-[-1] active:scale-85 active:scale-x-[-1] scale-x-[-1]" src="{{ asset('storage/images/arrow2.png') }}" alt="вперед" >
                 </button>
             </span>
         </div>
@@ -328,7 +359,7 @@
 
                     <div>
                         <button type="submit" 
-                            class="w-full lg:w-auto hover:bg-[#006598] bg-[#0075B1] transition duration-150 ease-in-out text-white font-medium py-3 px-8 rounded-[6px] transition duration-150 ease-in-out whitespace-nowrap">
+                            class="w-full lg:w-auto hover:bg-[#006598]  active:scale-95 cursor-pointer bg-[#0075B1] transition duration-150 ease-in-out text-white font-medium py-3 px-8 rounded-[6px] transition duration-150 ease-in-out whitespace-nowrap">
                             Отправить
                         </button>
                     </div>
@@ -346,13 +377,13 @@
                 Новости
             <span class="flex items-center gap-5">
                     <button class="swiper-prev cursor-pointer hover:opacity-70 transition">
-                        <img src="{{ asset('storage/images/arrow2.png') }}" alt="назад">
+                        <img src="{{ asset('storage/images/arrow2.png') }}" alt="назад" class=" hover:scale-115 active:scale-85">
                     </button>
                     
                     <img src="{{ asset('storage/images/line.png') }}" alt="разделитель">
                     
                     <button class="swiper-next cursor-pointer hover:opacity-70 transition">
-                        <img class="scale-x-[-1]" src="{{ asset('storage/images/arrow2.png') }}" alt="вперед">
+                        <img class=" hover:scale-115 hover:scale-x-[-1] active:scale-85 active:scale-x-[-1] scale-x-[-1]" src="{{ asset('storage/images/arrow2.png') }}" alt="вперед">
                     </button>
                 </span>
             </div>
