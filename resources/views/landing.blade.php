@@ -10,6 +10,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+
 </head>
 <body>
     <x-header>
@@ -64,7 +66,7 @@
             </div>
         </div>
     </div>
-    <div>
+    <div class="mb-10">
 
         <div class="text-[24px] font-medium container">Акции и скидки</div>
 
@@ -119,6 +121,82 @@
                     <span class="flex flex-row items-center mt-6 gap-2 blue">Подробнее <img src="{{ asset('storage/images/arrow.png') }}" alt="палка"></span>
                 </div>
             </div>
+        </div>
+    </div>
+
+    <div>
+    <div class="text-[24px] font-medium container flex flex-row items-center justify-between pb-15">
+        Популярные товары 
+        <span class="flex items-center gap-5">
+            <button class="swiper-prev cursor-pointer hover:opacity-70 transition">
+                <img src="{{ asset('storage/images/arrow2.png') }}" alt="назад">
+            </button>
+            
+            <img src="{{ asset('storage/images/line.png') }}" alt="разделитель">
+            
+            <button class="swiper-next cursor-pointer hover:opacity-70 transition">
+                <img class="scale-x-[-1]" src="{{ asset('storage/images/arrow2.png') }}" alt="вперед">
+            </button>
+        </span>
+    </div>
+
+        <style>
+            .swiper {
+            width: 100%;
+            height: 100%;
+            }
+
+            .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            }
+
+            .swiper-slide img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            }
+        </style>
+
+        <div class="swiper mySwiper container">
+            <div class="swiper-wrapper pb-10">
+            <div class="swiper-slide"><x-card></x-card></div>
+            <div class="swiper-slide"><x-card></x-card></div>
+            <div class="swiper-slide"><x-card></x-card></div>
+            <div class="swiper-slide"><x-card></x-card></div>
+            <div class="swiper-slide"><x-card></x-card></div>
+            <div class="swiper-slide"><x-card></x-card></div>
+            <div class="swiper-slide"><x-card></x-card></div>
+            <div class="swiper-slide"><x-card></x-card></div>
+            <div class="swiper-slide"><x-card></x-card></div>
+            </div>
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+
+        <script>
+                var swiper = new Swiper(".mySwiper", {
+                slidesPerView: 5,
+                spaceBetween: 30,
+                navigation: {
+                nextEl: '.swiper-next',
+                prevEl: '.swiper-prev',
+                },
+                pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+                },
+                });
+        </script>
+    </div>
+    <div class="container flex flex-col items-center justify-center text-center" style="background-image: url('{{ asset('storage/images/tires.png') }}');">
+        <div class="flex flex-col text-white ibm">
+            <p class="text-[24px] font-medium">Работаете с техникой — работайте с профессионалами</p>
+            <p class="text-[14px] font-normal w-172">Оставьте заявку или позвоните нам — наши специалисты быстро подберут запчасти под ваш транспорт.</p>
         </div>
     </div>
 </body>
