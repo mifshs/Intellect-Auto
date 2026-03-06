@@ -25,7 +25,7 @@
 
         </div>
     </div>
-    <div class="bg-[#E1E1E1] w-screen mb-[40px]">
+    <div class="bg-[#E1E1E1] mb-[40px]">
         <div class="container">
             <div class="flex justify-between">
                 <div class="text-left w-[179px] flex flex-col justify-center">
