@@ -16,17 +16,73 @@
 <body>
     <x-header>
     </x-header>
-    <div class=" text-white h-[700px] flex items-center justify-center bg-no-repeat bg-cover" style="background-image: url('{{ asset('storage/images/bg-main.png') }}');">
-        <div class="container">
-            <div>
-                <h1 class="ibm text-[72px] font-bold text-left text-white w-[822px] mb-5 leading-18">Запчасти для коммерческой техники и спецтехники</h1>
-                <h3 class="w-[640px] mb-10 font-normal text-[16px]">Ваш транспорт — это инструмент, который должен работать, а не стоять в ремонте. 
-        Мы помогаем механикам, автопаркам и сервисным центрам держать технику в строю, поставляя качественные запчасти для грузовиков, автобусов, спецтехники и прицепов — точно в срок и по лучшей цене.</h3>
-                <button type="button" class="px-[48px] py-[12px] rounded-[6px] hover:bg-[#006598] bg-[#0075B1] transition duration-150 ease-in-out font-medium text-[18px]">Стать клиентом</button>
-        </div>
+<div class="text-white h-[700px] flex items-center justify-center relative overflow-hidden">
+    
+    <div class="swiper3 bg-swiper1 absolute inset-0 z-0">
+        <div class="swiper-wrapper">
 
+            <div class="swiper-slide bg-no-repeat bg-cover bg-center absolute inset-0" 
+                 style="background-image: url('{{ asset('storage/images/bg-main.png') }}');">
+            </div>
+            
+            <div class="swiper-slide bg-no-repeat bg-cover bg-center absolute inset-0" 
+                 style="background-image: url('{{ asset('storage/images/bg1.png') }}');">
+            </div>
+            
+            <div class="swiper-slide bg-no-repeat bg-cover bg-center absolute inset-0" 
+                 style="background-image: url('{{ asset('storage/images/bg2.png') }}');">
+            </div>
+
+            <div class="swiper-slide bg-no-repeat bg-cover bg-center absolute inset-0" 
+                 style="background-image: url('{{ asset('storage/images/bg3.png') }}');">
+            </div>
+
+            <div class="swiper-slide bg-no-repeat bg-cover bg-center absolute inset-0" 
+                 style="background-image: url('{{ asset('storage/images/bg4.png') }}');">
+            </div>
         </div>
     </div>
+    
+    <div class="absolute inset-0 bg-black/50 z-10"></div>
+
+
+    <div class="container relative z-20">
+        <div>
+            <h1 class="ibm text-[72px] font-bold text-left text-white w-[822px] mb-5 leading-18">
+                Запчасти для коммерческой техники и спецтехники
+            </h1>
+            <h3 class="w-[640px] mb-10 font-normal text-[16px]">
+                Ваш транспорт — это инструмент, который должен работать, а не стоять в ремонте. 
+                Мы помогаем механикам, автопаркам и сервисным центрам держать технику в строю, 
+                поставляя качественные запчасти для грузовиков, автобусов, спецтехники и прицепов — 
+                точно в срок и по лучшей цене.
+            </h3>
+            <button type="button" class="px-[48px] py-[12px] rounded-[6px] hover:bg-[#006598] bg-[#0075B1] transition duration-150 ease-in-out font-medium text-[18px]">
+                Стать клиентом
+            </button>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<script>
+    const swiper3 = new Swiper('.bg-swiper1', {
+        effect: 'fade',
+        fadeEffect: {
+            crossFade: true
+        },
+        autoplay: {
+            delay: 2000,
+            disableOnInteraction: false,
+        },
+        loop: true,
+        speed: 1500,
+        navigation: false,
+        pagination: false,
+    });
+</script>
+
     <div class="bg-[#E1E1E1] mb-[40px]">
         <div class="container">
             <div class="flex justify-between">
