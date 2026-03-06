@@ -286,9 +286,6 @@
     </div>
     <x-footer>
     </x-footer>
-    
-    <x-footer>
-    </x-footer>
 
 </body>
 </html>
