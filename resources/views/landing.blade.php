@@ -11,12 +11,18 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+    <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="IntellectAuto" />
+    <link rel="manifest" href="/site.webmanifest" />
 
 </head>
 <body>
     <x-header>
     </x-header>
-<div class="text-white h-[700px] flex items-center justify-center relative overflow-hidden">
+<div class="text-white flex items-center justify-center relative overflow-hidden lg:h-[700px] md:h-[450px] h-[210px]">
     
     <div class="swiper3 bg-swiper1 absolute inset-0 z-0">
         <div class="swiper-wrapper">
@@ -46,18 +52,24 @@
     <div class="absolute inset-0 bg-black/50 z-10"></div>
 
 
-    <div class="container relative z-20">
+    <div class="container relative z-20 px-4">
         <div>
-            <h1 class="ibm text-[72px] font-bold text-left text-white w-[822px] mb-5 leading-18">
+            <h1 class="ibm sm:text-[24px] md:text-[65px] lg:text-[72px] font-bold text-left text-white hidden md:flex md:w-[822px] mb-5 md:leading-18 sm:w-auto">
                 Запчасти для коммерческой техники и спецтехники
             </h1>
-            <h3 class="w-[640px] mb-10 font-normal text-[16px]">
+            <h1 class="ibm  font-bold text-left md:hidden text-white leading-5 mb-2">
+                Запчасти <br> для коммерческой <br> техники и спецтехники
+            </h1>
+            <h3 class="md:w-[640px] md:mb-10 font-normal text-[16px] hidden md:flex">
                 Ваш транспорт — это инструмент, который должен работать, а не стоять в ремонте. 
                 Мы помогаем механикам, автопаркам и сервисным центрам держать технику в строю, 
                 поставляя качественные запчасти для грузовиков, автобусов, спецтехники и прицепов — 
                 точно в срок и по лучшей цене.
             </h3>
-            <button type="button" class="px-[48px] py-[12px] rounded-[6px] hover:bg-[#006598] bg-[#0075B1] transition duration-150 ease-in-out font-medium text-[18px]">
+            <h3 class=" mb-10 font-normal text-[12px] md:hidden">
+                Быстро, надежно, без простоев
+            </h3>
+            <button type="button" class="px-[8px] py-[10px] md:px-[48px] md:py-[12px] rounded-[6px] hover:bg-[#006598] bg-[#0075B1] transition duration-150 ease-in-out font-medium text-[8px] md:text-[18px]">
                 Стать клиентом
             </button>
         </div>
@@ -83,9 +95,63 @@
     });
 </script>
 
-    <div class="bg-[#E1E1E1] mb-[40px]">
+
+    <div class="bg-[#E1E1E1] mb-[40px] ">
         <div class="container">
-            <div class="flex justify-between">
+            <div class="lg:hidden">
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"></div>
+                    <div class="swiper-slide">Slide 2</div>
+                    <div class="swiper-slide">Slide 3</div>
+                    <div class="swiper-slide">Slide 4</div>
+                    <div class="swiper-slide">Slide 5</div>
+                    <div class="swiper-slide">Slide 6</div>
+                    <div class="swiper-slide">Slide 7</div>
+                    <div class="swiper-slide">Slide 8</div>
+                    <div class="swiper-slide">Slide 9</div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+            </div>
+
+              <style>
+
+                .swiper {
+                width: 100%;
+                height: 100%;
+                }
+
+                .swiper-slide {
+                text-align: center;
+                font-size: 18px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                }
+
+                .swiper-slide img {
+                display: block;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                }
+            </style>
+
+            <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+
+            <script>
+                var swiper4 = new Swiper(".mySwiper", {
+                slidesPerView: 1,
+                navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
+                },
+                
+                });
+            </script>
+            <div class="flex justify-between px-4 hidden lg:flex">
                 <div class="text-left w-[179px] flex flex-col justify-center">
                     <p class="text-[14px] grey600">Широкий ассортимент</p>
                     <span class="text-[12px] grey500">Запчасти для европейских, российских и китайских марок: от двигателя до подвески.</span>
@@ -122,6 +188,7 @@
             </div>
         </div>
     </div>
+
     <div class="mb-10">
 
         <div class="text-[24px] font-medium container">Акции и скидки</div>

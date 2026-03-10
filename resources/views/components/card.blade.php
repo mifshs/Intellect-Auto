@@ -5,12 +5,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
 
-<div>
+<div class="max-w-[250px] max-md:max-w-[182px]">
     <div>
-        <img src="{{ asset('storage/images/cleaner.png') }}" alt="палка">
+        <img src="{{ asset('storage/images/cleaner.png') }}" alt="палка" class="">
     </div>
     <div>
-        <p class="grey600 text-[14px] text-left mt-2">Предохранитель Круглый 40A (36VDC)</p>
+        <p class="grey600 text-[14px] text-left mt-2 whitespace-normal">Предохранитель Круглый 40A (36VDC)</p>
         <p class="grey400 text-[12px] text-left">пласт. (уп. по 50 шт)</p>
     </div>
     <div class="flex flex-row items-center gap-3 mb-3">
