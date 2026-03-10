@@ -1,17 +1,17 @@
 @vite(['resources/css/app.css', 'resources/js/app.js'])
 <footer>
-    <div class="container pb-[85px] pt-10 flex justify-between">
-        <div class="">
-            <img src="{{ asset('storage/images/logo.png') }}" alt="logo" class="h-[31px] mb-6">
+    <div class="container pb-10 sm:pb-[85px] pt-10 flex-col sm:flex-row flex justify-between">
+        <div class="flex flex-row justify-between sm:flex-col sm:flex">
+            <img src="{{ asset('storage/images/logo.png') }}" alt="logo" class="h-[25px] sm:h-[31px] sm:mb-6">
             <div class="mb-[61px] flex grid-cols-3 gap-x-[10px]">
-                <img src="{{ asset('storage/images/vk.png') }}" alt="vk" class="h-[32px] mb-6 hover:scale-105 active:scale-95 cursor-pointer"  >
-                <img src="{{ asset('storage/images/gmail.png') }}" alt="gmail" class="h-[32px] mb-6 hover:scale-105 active:scale-95 cursor-pointer">
-                <img src="{{ asset('storage/images/tg.png') }}" alt="tg" class="h-[32px] mb-6 hover:scale-105 active:scale-95 cursor-pointer">
+                <img src="{{ asset('storage/images/vk.png') }}" alt="vk" class="h-[32px] sm:mb-6 hover:scale-105 active:scale-95 cursor-pointer"  >
+                <img src="{{ asset('storage/images/gmail.png') }}" alt="gmail" class="h-[32px] sm:mb-6 hover:scale-105 active:scale-95 cursor-pointer">
+                <img src="{{ asset('storage/images/tg.png') }}" alt="tg" class="h-[32px] sm:mb-6 hover:scale-105 active:scale-95 cursor-pointer">
             </div>
-            <p class="grey500 text-xs">© ООО Интеллект-Авто 2025</p>
+            <p class="grey500 text-xs hidden sm:flex">© ООО Интеллект-Авто 2025</p>
         </div>
-        <div class="flex grey500 text-xs w-[480px] justify-between flex-wrap">
-            <div class="">
+        <div class="flex grey500 text-xs sm:w-[480px] justify-between flex-wrap ">
+            <div class="mb-5 sm:mb-0">
                 <p class="mb-5 grey600">Покупателям</p>
                 <div class="flex flex-col grid-cols-5 gap-y-3">
                     <a href="#" class="hover:text-gray-800 active:scale-95">Акции</a>
@@ -35,8 +35,9 @@
                 <div class="flex flex-col grid-cols-5 gap-y-3">
                     <a href="#" class="hover:text-gray-800 active:scale-95">8 (900) 000 00 00</a>
                     <a href="#" class="hover:text-gray-800 active:scale-95">email@gmail.com</a>
-                    <a href="#" class="hover:text-gray-800 active:scale-95">г. Челябинск, ул. Разина,<br/> д. 3 офис 908/19</a>
-                
+                    <a href="#" class="hover:text-gray-800 active:scale-95 pb-2 sm:pb-0">г. Челябинск, ул. Разина,<br/> д. 3 офис 908/19</a>
+                    <p class="grey500 text-xs sm:hidden">© ООО Интеллект-Авто 2025</p>
+
                 </div>
             </div>
         </div>
