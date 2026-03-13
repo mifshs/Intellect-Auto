@@ -261,7 +261,7 @@
                     </div>
                         <div class="flex flex-row items-center justify-center gap-[12px] pt-5">
                             <div class="w-[44px] h-[44px] flex items-center justify-center border border-grey-200 rounded-[8px] hover:border-[#006598] transition cursor-pointer">
-                                <img src="{{ asset('storage/images/arrow4.png') }}" alt="стрелка">
+                                <img src="{{ asset('images/arrow4.png') }}" alt="стрелка">
                             </div>
                             <div class="w-[44px] h-[44px] flex items-center justify-center border border-grey-200 rounded-[8px] hover:border-[#006598] transition cursor-pointer">
                                 <span>1</span>
@@ -273,7 +273,7 @@
                                 <span>3</span>
                             </div>
                             <div class="w-[44px] h-[44px] flex items-center justify-center scale-x-[-1] border border-grey-200 rounded-[8px] hover:border-[#006598] transition cursor-pointer">
-                                <img src="{{ asset('storage/images/arrow4.png') }}" alt="стрелка">
+                                <img src="{{ asset('images/arrow4.png') }}" alt="стрелка">
                             </div>
                         </div>
                 </div>
