@@ -1,3 +1,4 @@
+    @props(['product'])
     @vite(['resources/css/app.css', 'resources/js/app.js'])
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -7,15 +8,15 @@
 
 <div class="max-w-[250px] max-md:max-w-[182px]">
     <div>
-        <img src="{{ asset('images/cleaner.png') }}" alt="палка" class="">
+        <img src="{{$product->path_img}}" alt="{{$product->title}}" class="">
     </div>
     <div>
-        <p class="grey600 text-[14px] text-left mt-2 whitespace-normal">Предохранитель Круглый 40A (36VDC)</p>
-        <p class="grey400 text-[12px] text-left">пласт. (уп. по 50 шт)</p>
+        <p class="grey600 text-[14px] text-left mt-2 whitespace-normal">{{$product->title}}</p>
+        <p class="grey400 text-[12px] text-left">{{$product->description}}</p>
     </div>
     <div class="flex flex-row items-center gap-3 mb-3">
-        <span class="grey600 text-16">908.00₽</span>
-        <span class="line-through grey500 text-[12px]">15 000₽</span>
+        <span class="grey600 text-[13px]">{{$product->price}} ₽</span>
+        <span class="line-through grey500 text-[11px]">{{$product->old_price}} ₽</span>
     </div>
     <div class="flex  ">
         <button type="button" class="px-[12px] py-[8px] rounded-[6px] hover:bg-[#006598]  active:scale-95 cursor-pointer bg-[#0075B1] transition duration-150 ease-in-out font-medium text-[14px] text-white font-normal">Купить</button>
