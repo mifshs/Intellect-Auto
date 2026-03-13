@@ -2,11 +2,11 @@
 <footer>
     <div class="container pb-10 sm:pb-[85px] pt-10 flex-col sm:flex-row flex justify-between">
         <div class="flex flex-row justify-between sm:flex-col sm:flex">
-            <img src="{{ asset('storage/images/logo.png') }}" alt="logo" class="h-[25px] sm:h-[31px] sm:mb-6">
+            <img src="{{ asset('images/logo.png') }}" alt="logo" class="h-[25px] sm:h-[31px] sm:mb-6">
             <div class="mb-[61px] flex grid-cols-3 gap-x-[10px]">
-                <img src="{{ asset('storage/images/vk.png') }}" alt="vk" class="h-[32px] sm:mb-6 hover:scale-105 active:scale-95 cursor-pointer"  >
-                <img src="{{ asset('storage/images/gmail.png') }}" alt="gmail" class="h-[32px] sm:mb-6 hover:scale-105 active:scale-95 cursor-pointer">
-                <img src="{{ asset('storage/images/tg.png') }}" alt="tg" class="h-[32px] sm:mb-6 hover:scale-105 active:scale-95 cursor-pointer">
+                <img src="{{ asset('images/vk.png') }}" alt="vk" class="h-[32px] sm:mb-6 hover:scale-105 active:scale-95 cursor-pointer"  >
+                <img src="{{ asset('images/gmail.png') }}" alt="gmail" class="h-[32px] sm:mb-6 hover:scale-105 active:scale-95 cursor-pointer">
+                <img src="{{ asset('images/tg.png') }}" alt="tg" class="h-[32px] sm:mb-6 hover:scale-105 active:scale-95 cursor-pointer">
             </div>
             <p class="grey500 text-xs hidden sm:flex">© ООО Интеллект-Авто 2025</p>
         </div>

@@ -43,7 +43,7 @@
                             active:border-blue-600 active:shadow-inner
                             transition-all duration-200 group bg-white max-md:ml-[12px] max-sm:ml-[0px]">
     
-                            <img src="{{ asset('storage/images/magnifier.png') }}" alt="magnifier" 
+                            <img src="{{ asset('images/magnifier.png') }}" alt="magnifier" 
                             class="w-4 h-4 opacity-50 group-hover:opacity-70 group-focus-within:opacity-100 group-focus-within:scale-110 
                             group-active:opacity-100 transition-all duration-200 flex-shrink-0">
     
@@ -60,7 +60,7 @@
                             <button class="bg-[#0075B1] ml-[12px] rounded-[6px] flex items-center p-[8px] 
                             hover:bg-[#006598] transition duration-150 ease-in-out 
                             active:scale-95 cursor-pointer">
-                            <img src="{{ asset('storage/images/filter.png') }}" alt="filter">
+                            <img src="{{ asset('images/filter.png') }}" alt="filter">
                             </button>
                         </a>
                     </div>

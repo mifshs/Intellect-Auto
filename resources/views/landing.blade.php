@@ -28,23 +28,23 @@
         <div class="swiper-wrapper">
 
             <div class="swiper-slide bg-no-repeat bg-cover bg-center absolute inset-0" 
-                 style="background-image: url('{{ asset('storage/images/bg-main.png') }}');">
+                 style="background-image: url('{{ asset('images/bg-main.png') }}');">
             </div>
             
             <div class="swiper-slide bg-no-repeat bg-cover bg-center absolute inset-0" 
-                 style="background-image: url('{{ asset('storage/images/bg1.png') }}');">
+                 style="background-image: url('{{ asset('images/bg1.png') }}');">
             </div>
             
             <div class="swiper-slide bg-no-repeat bg-cover bg-center absolute inset-0" 
-                 style="background-image: url('{{ asset('storage/images/bg2.png') }}');">
+                 style="background-image: url('{{ asset('images/bg2.png') }}');">
             </div>
 
             <div class="swiper-slide bg-no-repeat bg-cover bg-center absolute inset-0" 
-                 style="background-image: url('{{ asset('storage/images/bg3.png') }}');">
+                 style="background-image: url('{{ asset('images/bg3.png') }}');">
             </div>
 
             <div class="swiper-slide bg-no-repeat bg-cover bg-center absolute inset-0" 
-                 style="background-image: url('{{ asset('storage/images/bg4.png') }}');">
+                 style="background-image: url('{{ asset('images/bg4.png') }}');">
             </div>
         </div>
     </div>
@@ -122,10 +122,10 @@
                         </div>
                     </div>
                     <div class="swiper-next1 absolute right-2 top-1/2 -translate-y-1/2 z-10">
-                        <img class=" hover:scale-115 hover:scale-x-[-1] active:scale-85 active:scale-x-[-1] scale-x-[-1]" src="{{ asset('storage/images/arrow2.png') }}" alt="вперед" >
+                        <img class=" hover:scale-115 hover:scale-x-[-1] active:scale-85 active:scale-x-[-1] scale-x-[-1]" src="{{ asset('images/arrow2.png') }}" alt="вперед" >
                     </div>
                     <div class="swiper-prev1 absolute left-2 top-1/2 -translate-y-1/2 z-10">
-                        <img src="{{ asset('storage/images/arrow2.png') }}" alt="назад" class="hover:scale-115 active:scale-85">
+                        <img src="{{ asset('images/arrow2.png') }}" alt="назад" class="hover:scale-115 active:scale-85">
                     </div>
                 </div>
             </div>
@@ -148,21 +148,21 @@
                     <span class="text-[12px] grey500">Запчасти для европейских, российских и китайских марок: от двигателя до подвески.</span>
                 </div>
 
-                <img src="{{ asset('storage/images/stick.png') }}" alt="палка">
+                <img src="{{ asset('images/stick.png') }}" alt="палка">
 
                 <div class="text-left w-[179px] flex flex-col justify-center">
                     <p class="text-[14px] grey600">Проверенные поставщики</p>
                     <span class="text-[12px] grey500">Оригинал и надежные аналоги от ведущих брендов.</span>
                 </div>
 
-                <img src="{{ asset('storage/images/stick.png') }}" alt="палка">
+                <img src="{{ asset('images/stick.png') }}" alt="палка">
 
                  <div class="text-left w-[179px] flex flex-col justify-center">
                     <p class="text-[14px] grey600">Быстрая доставка по РФ</p>
                     <span class="text-[12px] grey500">Работаем с надежными ТК, отправляем в день заказа.</span>
                 </div>
 
-                <img src="{{ asset('storage/images/stick.png') }}" alt="палка">
+                <img src="{{ asset('images/stick.png') }}" alt="палка">
 
 
                 <div class="text-left w-[179px] flex flex-col justify-center">
@@ -170,7 +170,7 @@
                     <span class="text-[12px] grey500">Наши специалисты помогут найти нужную деталь по VIN, артикулу или фото.</span>
                 </div>
 
-                <img src="{{ asset('storage/images/stick.png') }}" alt="палка">
+                <img src="{{ asset('images/stick.png') }}" alt="палка">
 
                 <div class="text-left w-[179px] flex flex-col justify-center">
                     <p class="text-[14px] grey600">Оплата, как удобно</p>
@@ -198,7 +198,7 @@
                     </div>
                    <span class="blue flex flex-row items-center mt-35 mb-15 gap-2 group cursor-pointer select-none">
                     <span class="transition-all duration-200 group-hover:font-semibold group-hover:text-blue-700 group-active:font-bold group-active:text-blue-800 group-active:scale-95">Подробнее</span>
-                    <img src="{{ asset('storage/images/arrow.png') }}" alt="стрелка" 
+                    <img src="{{ asset('images/arrow.png') }}" alt="стрелка" 
                         class="transition-all duration-200 
                         group-hover:translate-x-2 group-hover:scale-110
                         group-active:translate-x-3 group-active:scale-90">
@@ -215,7 +215,7 @@
                     <span class="blue flex flex-row items-baseline justify-between group cursor-pointer select-none">
                         <div class="flex flex-row items-center justify-center gap-2">
                             <span class="text-[14px] transition-all duration-200 group-hover:font-semibold group-hover:text-blue-700 group-active:font-bold group-active:text-blue-800 group-active:scale-95">Подробнее</span>
-                            <img src="{{ asset('storage/images/arrow.png') }}" alt="стрелка" 
+                            <img src="{{ asset('images/arrow.png') }}" alt="стрелка" 
                                 class="transition-all duration-200 
                                 group-hover:translate-x-2 group-hover:scale-110
                                 group-active:translate-x-3 group-active:scale-90">
@@ -235,10 +235,10 @@
                             <h3 class="grey600 text-[20px] font-semibold">Бесплатная доставка при заказе от 10 000 ₽</h3>
                         </div>
                     </div>
-                    <img class="mb-4" src="{{ asset('storage/images/gear.png') }}" alt="палка">
+                    <img class="mb-4" src="{{ asset('images/gear.png') }}" alt="палка">
                     <span class="blue flex flex-row items-center gap-2 group cursor-pointer select-none">
                     <span class="transition-all duration-200 group-hover:font-semibold group-hover:text-blue-700 group-active:font-bold group-active:text-blue-800 group-active:scale-95">Подробнее</span>
-                    <img src="{{ asset('storage/images/arrow.png') }}" alt="стрелка" 
+                    <img src="{{ asset('images/arrow.png') }}" alt="стрелка" 
                         class="transition-all duration-200 
                         group-hover:translate-x-2 group-hover:scale-110
                         group-active:translate-x-3 group-active:scale-90">
@@ -255,13 +255,13 @@
                         </div>
                         <span class="blue flex flex-row items-center gap-2 group cursor-pointer select-none">
                         <span class="text-[14px] transition-all duration-200 group-hover:font-semibold group-hover:text-blue-700 group-active:font-bold group-active:text-blue-800 group-active:scale-95">Подробнее</span>
-                            <img src="{{ asset('storage/images/arrow.png') }}" alt="стрелка" 
+                            <img src="{{ asset('images/arrow.png') }}" alt="стрелка" 
                                 class="transition-all duration-200 
                                 group-hover:translate-x-2 group-hover:scale-110
                                 group-active:translate-x-3 group-active:scale-90">
                         </span>
                     </div>
-                    <img class="h-[103px]" src="{{ asset('storage/images/gear.png') }}" alt="палка">
+                    <img class="h-[103px]" src="{{ asset('images/gear.png') }}" alt="палка">
                 </div>
             </div>
 
@@ -280,14 +280,14 @@
                                 group-active:font-bold group-active:text-black group-active:scale-95">
                         Подробнее
                     </span>
-                    <img src="{{ asset('storage/images/icon-white.png') }}" alt="стрелка" 
+                    <img src="{{ asset('images/icon-white.png') }}" alt="стрелка" 
                         class="transition-all duration-200 
                                 group-hover:translate-x-2 group-hover:scale-110
                                 group-active:translate-x-3 group-active:scale-90
-                                group-hover:brightness-0  /* Делает стрелку черной */
+                                group-hover:brightness-0  
                                 group-active:brightness-0">
                     </span>
-                    <img class="absolute top-10.5 right-1 w-40 xl:w-auto xl:top-21 xl:right-11" src="{{ asset('storage/images/tire.png') }}" alt="палка">
+                    <img class="absolute top-10.5 right-1 w-40 xl:w-auto xl:top-21 xl:right-11" src="{{ asset('images/tire.png') }}" alt="палка">
                 </div>
 
                 <div class="py-[18px] px-[16px] xl:p-[30px] flex flex-col justify-center w-auto xl:w-[433px] bg-[#F1F1F1]">
@@ -299,7 +299,7 @@
                     </div>
                    <span class="blue flex flex-row items-center mt-6 gap-2 group cursor-pointer select-none">
                     <span class="text-[14px] transition-all duration-200 group-hover:font-semibold group-hover:text-blue-700 group-active:font-bold group-active:text-blue-800 group-active:scale-95">Подробнее</span>
-                    <img src="{{ asset('storage/images/arrow.png') }}" alt="стрелка" 
+                    <img src="{{ asset('images/arrow.png') }}" alt="стрелка" 
                         class="transition-all duration-200 
                         group-hover:translate-x-2 group-hover:scale-110
                         group-active:translate-x-3 group-active:scale-90">
@@ -314,13 +314,13 @@
             Популярные товары 
             <span class=" hidden xl:flex items-center gap-5">
                 <button class="swiper-prev cursor-pointer hover:opacity-70 transition ">
-                    <img src="{{ asset('storage/images/arrow2.png') }}" alt="назад" class="hover:scale-115 active:scale-85">
+                    <img src="{{ asset('images/arrow2.png') }}" alt="назад" class="hover:scale-115 active:scale-85">
                 </button>
                 
-                <img src="{{ asset('storage/images/line.png') }}" alt="разделитель">
+                <img src="{{ asset('images/line.png') }}" alt="разделитель">
                 
                 <button class="swiper-next cursor-pointer hover:opacity-70 transition">
-                    <img class=" hover:scale-115 hover:scale-x-[-1] active:scale-85 active:scale-x-[-1] scale-x-[-1]" src="{{ asset('storage/images/arrow2.png') }}" alt="вперед" >
+                    <img class=" hover:scale-115 hover:scale-x-[-1] active:scale-85 active:scale-x-[-1] scale-x-[-1]" src="{{ asset('images/arrow2.png') }}" alt="вперед" >
                 </button>
             </span>
         </div>
@@ -370,7 +370,7 @@
                     <div class="flex flex-row items-center justify-items-start gap-[12px] pt-5">
                         <div class="gap-3 flex items-center transition cursor-pointer">
                             <a href="/index" class="text-[14px] blue transition-all duration-200 group-hover:font-semibold group-hover:text-blue-700 group-active:font-bold group-active:text-blue-800 group-active:scale-95">Смотреть еще</a>
-                                <img src="{{ asset('storage/images/arrow.png') }}" alt="стрелка" 
+                                <img src="{{ asset('images/arrow.png') }}" alt="стрелка" 
                                 class="transition-all duration-200 
                                 group-hover:translate-x-2 group-hover:scale-110
                                 group-active:translate-x-3 group-active:scale-90">
@@ -416,7 +416,7 @@
                             <option value="diagnostics">Диагностика</option>
                         </select>
                         <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-3 text-gray-700">
-                            <img class="scale-x-[-1]" src="{{ asset('storage/images/arrow3.png') }}" alt="вперед">
+                            <img class="scale-x-[-1]" src="{{ asset('images/arrow3.png') }}" alt="вперед">
                         </div>
                     </div>
 
@@ -430,7 +430,7 @@
                             <option value="mercedes">Mercedes</option>
                         </select>
                         <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-3 text-gray-700">
-                            <img class="scale-x-[-1]" src="{{ asset('storage/images/arrow3.png') }}" alt="вперед">
+                            <img class="scale-x-[-1]" src="{{ asset('images/arrow3.png') }}" alt="вперед">
                         </div>
                     </div>
 
@@ -453,7 +453,7 @@
                             <option value="novosibirsk">Новосибирск</option>
                         </select>
                         <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-3 text-gray-700">
-                            <img class="scale-x-[-1]" src="{{ asset('storage/images/arrow3.png') }}" alt="вперед">
+                            <img class="scale-x-[-1]" src="{{ asset('images/arrow3.png') }}" alt="вперед">
                         </div>
                     </div>
 
@@ -493,13 +493,13 @@
                 Новости
             <span class="flex items-center gap-5">
                     <button class="swiper-prev cursor-pointer hover:opacity-70 transition">
-                        <img src="{{ asset('storage/images/arrow2.png') }}" alt="назад" class=" hover:scale-115 active:scale-85">
+                        <img src="{{ asset('images/arrow2.png') }}" alt="назад" class=" hover:scale-115 active:scale-85">
                     </button>
                     
-                    <img src="{{ asset('storage/images/line.png') }}" alt="разделитель" class="h-5 lg:h-auto">
+                    <img src="{{ asset('images/line.png') }}" alt="разделитель" class="h-5 lg:h-auto">
                     
                     <button class="swiper-next cursor-pointer hover:opacity-70 transition">
-                        <img class=" hover:scale-115 hover:scale-x-[-1] active:scale-85 active:scale-x-[-1] scale-x-[-1]" src="{{ asset('storage/images/arrow2.png') }}" alt="вперед">
+                        <img class=" hover:scale-115 hover:scale-x-[-1] active:scale-85 active:scale-x-[-1] scale-x-[-1]" src="{{ asset('images/arrow2.png') }}" alt="вперед">
                     </button>
                 </span>
             </div>

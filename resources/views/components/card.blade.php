@@ -7,7 +7,7 @@
 
 <div class="max-w-[250px] max-md:max-w-[182px]">
     <div>
-        <img src="{{ asset('storage/images/cleaner.png') }}" alt="палка" class="">
+        <img src="{{ asset('images/cleaner.png') }}" alt="палка" class="">
     </div>
     <div>
         <p class="grey600 text-[14px] text-left mt-2 whitespace-normal">Предохранитель Круглый 40A (36VDC)</p>

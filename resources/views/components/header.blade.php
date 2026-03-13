@@ -13,7 +13,7 @@
                             <option value="volgograd">Волгоград</option>
                             <option value="novosibirsk">Новосибирск</option>
                     </select>
-                    <img src="{{ asset('storage/images/Icon.png') }}" alt="треугольник" class="w-[6.67px] h-[3.33px] ml-[-8px]">
+                    <img src="{{ asset('images/Icon.png') }}" alt="треугольник" class="w-[6.67px] h-[3.33px] ml-[-8px]">
                 </div>
                 <div class="flex  grid-cols-4 gap-x-10">
                     <a href="#" class="hover:text-gray-800 active:scale-95">Акции</a>
@@ -26,11 +26,11 @@
                 </div>
             </div>
             <div class="lg:flex hidden  bottom-header justify-between items-center">
-                <a href="/"><img src="{{ asset('storage/images/logo.png') }}" alt="logo" class="h-[31px]"></a>
+                <a href="/"><img src="{{ asset('images/logo.png') }}" alt="logo" class="h-[31px]"></a>
 
                 <div class="flex ">
                     <a href="/index"> <button class="bg-[#0075B1] w-[103px] h-[36px] rounded-[6px] flex items-center content-center p-[13px] mr-2 hover:bg-[#006598] transition duration-150 ease-in-out active:scale-95 cursor-pointer">
-                        <img src="{{ asset('storage/images/burger.png') }}" alt="burger" class="">
+                        <img src="{{ asset('images/burger.png') }}" alt="burger" class="">
                         <p class="text-sm text-white mb-[1px] ml-[10.5px]">Каталог</p>
                     </button></a>
                     <div class="flex items-center border border-gray-200 rounded-[8px] text-sm px-3 py-2 w-[545px] h-[36px]
@@ -40,7 +40,7 @@
                     transition-all duration-200 group max-lg:w-[250px]">
     
    
-                    <img src="{{ asset('storage/images/magnifier.png') }}" alt="magnifier" 
+                    <img src="{{ asset('images/magnifier.png') }}" alt="magnifier" 
                     class="w-4 h-4 opacity-50 group-hover:opacity-70 group-focus-within:opacity-100 group-focus-within:scale-110 
                     group-active:opacity-100 transition-all duration-200">
     
@@ -54,14 +54,14 @@
                     </div>
                 </div>
                 <div class="flex max-md:hidden">
-                    <img src="{{ asset('storage/images/basket.png') }}" alt="basket" class="ml-1 hover:scale-105 active:scale-95 cursor-pointer">
-                    <img src="{{ asset('storage/images/user.png') }}" alt="user" class="hover:scale-105 active:scale-95 cursor-pointer">
+                    <img src="{{ asset('images/basket.png') }}" alt="basket" class="ml-1 hover:scale-105 active:scale-95 cursor-pointer">
+                    <img src="{{ asset('images/user.png') }}" alt="user" class="hover:scale-105 active:scale-95 cursor-pointer">
                 </div>
             </div>
             <div class="container py-4 md:flex flex flex-row lg:hidden justify-between">
-                <a href="/"><img src="{{ asset('storage/images/logo.png') }}" alt="logo" class="h-[31px]"></a>
+                <a href="/"><img src="{{ asset('images/logo.png') }}" alt="logo" class="h-[31px]"></a>
                 <button id="mobile-menu-btn" class="p-2 focus:outline-none">
-                    <img src="{{ asset('storage/images/burger1.png') }}" alt="menu">
+                    <img src="{{ asset('images/burger1.png') }}" alt="menu">
                 </button>
             </div>
 
@@ -78,7 +78,7 @@
                     </div>
                     
                     <div class="mb-6 pb-4 border-b border-gray-200">
-                        <img src="{{ asset('storage/images/logo.png') }}" alt="logo" class="h-[31px]">
+                        <img src="{{ asset('images/logo.png') }}" alt="logo" class="h-[31px]">
                     </div>
                     
                     <a href="/index" class="block py-3 px-4 bg-[#0075B1] text-white rounded-lg text-center mb-4">
@@ -112,11 +112,11 @@
                     
                     <div class="mt-6 pt-6 border-t border-gray-200 flex gap-4">
                         <a href="#" class="flex-1 flex items-center justify-center gap-2 py-3 px-4 bg-gray-100 rounded-lg">
-                            <img src="{{ asset('storage/images/basket.png') }}" alt="basket" class="w-5 h-5">
+                            <img src="{{ asset('images/basket.png') }}" alt="basket" class="w-5 h-5">
                             <span class="text-sm">Корзина</span>
                         </a>
                         <a href="#" class="flex-1 flex items-center justify-center gap-2 py-3 px-4 bg-gray-100 rounded-lg">
-                            <img src="{{ asset('storage/images/user.png') }}" alt="user" class="w-5 h-5">
+                            <img src="{{ asset('images/user.png') }}" alt="user" class="w-5 h-5">
                             <span class="text-sm">Профиль</span>
                         </a>
                     </div>
