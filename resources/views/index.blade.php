@@ -255,9 +255,11 @@
                 </div>
                 <div class="flex-1 flex flex-col max-lg:m-auto">
                     <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+                        @foreach($products as $product)
                         @for ($i = 0; $i < 12; $i++)
-                            <x-card></x-card>
+                            <x-card :product="$product"></x-card>
                         @endfor
+                        @endforeach
                     </div>
                         <div class="flex flex-row items-center justify-center gap-[12px] pt-5">
                             <div class="w-[44px] h-[44px] flex items-center justify-center border border-grey-200 rounded-[8px] hover:border-[#006598] transition cursor-pointer">

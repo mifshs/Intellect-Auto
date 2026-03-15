@@ -11,6 +11,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+            <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+
     <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="shortcut icon" href="/favicon.ico" />
@@ -76,8 +78,6 @@
     </div>
 </div>
 
-<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
 <script>
     const swiper3 = new Swiper('.bg-swiper1', {
         effect: 'fade',
@@ -121,11 +121,11 @@
                             <span class="text-[12px] grey500 w-[253px] text-left">Для юрлиц и ИП, безналичный расчет, отсрочка постоянным клиентам.</span>
                         </div>
                     </div>
-                    <div class="swiper-next1 absolute right-2 top-1/2 -translate-y-1/2 z-10">
-                        <img class=" hover:scale-115 hover:scale-x-[-1] active:scale-85 active:scale-x-[-1] scale-x-[-1]" src="{{ asset('images/arrow2.png') }}" alt="вперед" >
+                    <div class="swiper-next absolute right-2 top-1/2 -translate-y-1/2 z-10">
+                        <img class=" hover:scale-115 hover:scale-x-[-1] active:scale-85 active:scale-x-[-1] scale-x-[-1] cursor-pointer" src="{{ asset('images/arrow2.png') }}" alt="вперед" >
                     </div>
-                    <div class="swiper-prev1 absolute left-2 top-1/2 -translate-y-1/2 z-10">
-                        <img src="{{ asset('images/arrow2.png') }}" alt="назад" class="hover:scale-115 active:scale-85">
+                    <div class="swiper-prev absolute left-2 top-1/2 -translate-y-1/2 z-10">
+                        <img src="{{ asset('images/arrow2.png') }}" alt="назад" class="hover:scale-115 active:scale-85 cursor-pointer">
                     </div>
                 </div>
             </div>
@@ -136,8 +136,8 @@
                 slidesPerView: 1,
                 spaceBetween: 30,
                 navigation: {
-                    nextEl: ".swiper-next1",
-                    prevEl: ".swiper-prev1",
+                    nextEl: ".swiper-next",
+                    prevEl: ".swiper-prev",
                 },
                 
                 });
@@ -328,14 +328,11 @@
         <style>
             .swiper {
             width: 100%;
-            height: 100%;
             }
 
             .swiper-slide {
-            text-align: center;
             font-size: 18px;
             display: flex;
-            justify-content: center;
             align-items: center;
             }
 
@@ -347,24 +344,26 @@
             }
         </style>
 
-        <div class="hidden xl:flex mySwiper container overflow-hidden">
+        <div class="hidden xl:flex mySwiper8 container overflow-hidden">
             <div class="swiper-wrapper pb-10">
-                <div class="swiper-slide"><x-card></x-card></div>
-                <div class="swiper-slide"><x-card></x-card></div>
-                <div class="swiper-slide"><x-card></x-card></div>
-                <div class="swiper-slide"><x-card></x-card></div>
-                <div class="swiper-slide"><x-card></x-card></div>
-                <div class="swiper-slide"><x-card></x-card></div>
-                <div class="swiper-slide"><x-card></x-card></div>
-                <div class="swiper-slide"><x-card></x-card></div>
-                <div class="swiper-slide"><x-card></x-card></div>
+                @foreach($products as $product)
+                <div class="swiper-slide"><x-card :product="$product"></x-card></div>
+                <div class="swiper-slide"><x-card :product="$product"></x-card></div>
+                <div class="swiper-slide"><x-card :product="$product"></x-card></div>
+                <div class="swiper-slide"><x-card :product="$product"></x-card></div>
+                <div class="swiper-slide"><x-card :product="$product"></x-card></div>
+                <div class="swiper-slide"><x-card :product="$product"></x-card></div>
+                <div class="swiper-slide"><x-card :product="$product"></x-card></div>
+                <div class="swiper-slide"><x-card :product="$product"></x-card></div>
+                <div class="swiper-slide"><x-card :product="$product"></x-card></div>
+                @endforeach
             </div>
         </div>
 
          <div class="container flex-1 flex flex-col max-lg:m-auto xl:hidden">
                     <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-4 gap-4">
                         @for ($i = 0; $i < 6; $i++)
-                            <x-card></x-card>
+                            <x-card :product="$product"></x-card>
                         @endfor
                     </div>
                     <div class="flex flex-row items-center justify-items-start gap-[12px] pt-5">
@@ -378,10 +377,8 @@
                     </div>
         </div>
 
-        <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
-
         <script>
-                var swiper = new Swiper(".mySwiper", {
+                var swiper = new Swiper(".mySwiper8", {
                 slidesPerView: 5,
                 spaceBetween: 30,
                 navigation: {
@@ -395,7 +392,7 @@
                 });
         </script>
     </div>
-    <div class=" container flex flex-col items-center justify-center text-center bg-no-repeat py-6 px-20 mb-10" style="background-image: url('{{ asset('storage/images/tires2.png') }}');">
+    <div class=" container flex flex-col items-center justify-center text-center bg-no-repeat py-6 px-20 mb-10" style="background-image: url('{{ asset('images/tires2.png') }}');">
         <div class="flex flex-col text-white ibm">
             <p class="text-[24px] font-medium pb-1 hidden lg:flex">Работаете с техникой — работайте с профессионалами</p>
             <p class="text-[18px] font-medium pb-1 flex lg:hidden">Подберем нужную <br> запчасть за 5 минут</p>
@@ -489,9 +486,9 @@
     </div>
 
         <div class="pt-5 mb-10">
-            <div class="text-[24px] font-medium container flex flex-row items-center justify-between pb-2 lg:pb-15">
+            <div class="text-[24px] font-medium container flex flex-row items-center justify-between pb-2 lg:pb-2">
                 Новости
-            <span class="flex items-center gap-5">
+            <span class=" items-center gap-5 hidden lg:flex">
                     <button class="swiper-prev cursor-pointer hover:opacity-70 transition">
                         <img src="{{ asset('images/arrow2.png') }}" alt="назад" class=" hover:scale-115 active:scale-85">
                     </button>
@@ -501,20 +498,28 @@
                     <button class="swiper-next cursor-pointer hover:opacity-70 transition">
                         <img class=" hover:scale-115 hover:scale-x-[-1] active:scale-85 active:scale-x-[-1] scale-x-[-1]" src="{{ asset('images/arrow2.png') }}" alt="вперед">
                     </button>
-                </span>
+            </span>
+            <span class="flex items-center gap-5 lg:hidden">
+                    <button class="swiper-prev5 cursor-pointer hover:opacity-70 transition">
+                        <img src="{{ asset('images/arrow2.png') }}" alt="назад" class=" hover:scale-115 active:scale-85">
+                    </button>
+                    
+                    <img src="{{ asset('images/line.png') }}" alt="разделитель" class="h-5 lg:h-auto">
+                    
+                    <button class="swiper-next5 cursor-pointer hover:opacity-70 transition">
+                        <img class=" hover:scale-115 hover:scale-x-[-1] active:scale-85 active:scale-x-[-1] scale-x-[-1]" src="{{ asset('images/arrow2.png') }}" alt="вперед">
+                    </button>
+            </span>
             </div>
 
             <style>
                 .swiper {
                 width: 100%;
-                height: 100%;
                 }
 
                 .swiper-slide {
-                text-align: center;
                 font-size: 18px;
                 display: flex;
-                justify-content: center;
                 align-items: center;
                 }
 
@@ -528,14 +533,12 @@
             <div class="hidden lg:flex">
                 <div class="swiper mySwiper1 container">
                     <div class="swiper-wrapper pb-10">
-                        <div class="swiper-slide"><x-news-card></x-news-card></div>
-                        <div class="swiper-slide"><x-news-card></x-news-card></div>
-                        <div class="swiper-slide"><x-news-card></x-news-card></div>
-                        <div class="swiper-slide"><x-news-card></x-news-card></div>
-                        <div class="swiper-slide"><x-news-card></x-news-card></div>
-                        <div class="swiper-slide"><x-news-card></x-news-card></div>
-                        <div class="swiper-slide"><x-news-card></x-news-card></div>
-                        <div class="swiper-slide"><x-news-card></x-news-card></div>
+                        @foreach($news_pages as $news_page)
+                        <div class="swiper-slide"><x-news-card :news_page="$news_page"></x-news-card></div>
+                        @endforeach
+                        @foreach($news_pages as $news_page)
+                        <div class="swiper-slide"><x-news-card :news_page="$news_page"></x-news-card></div>
+                        @endforeach
                     </div>
                 </div>
             </div>
@@ -543,19 +546,12 @@
             <div class="lg:hidden">
                 <div class="swiper7 mySwiper3 container overflow-hidden">
                     <div class="swiper-wrapper pb-10">
-                        <div class="swiper-slide"><x-news-card-adapt></x-news-card-adapt></div>
-                        <div class="swiper-slide"><x-news-card-adapt></x-news-card-adapt></div>
-                        <div class="swiper-slide"><x-news-card-adapt></x-news-card-adapt></div>
-                        <div class="swiper-slide"><x-news-card-adapt></x-news-card-adapt></div>
-                        <div class="swiper-slide"><x-news-card-adapt></x-news-card-adapt></div>
-                        <div class="swiper-slide"><x-news-card-adapt></x-news-card-adapt></div>
-                        <div class="swiper-slide"><x-news-card-adapt></x-news-card-adapt></div>
-                        <div class="swiper-slide"><x-news-card-adapt></x-news-card-adapt></div>
+                        @foreach($news_pages as $news_page)
+                        <div class="swiper-slide"><x-news-card-adapt :news_page="$news_page"></x-news-card></div>
+                        @endforeach
                     </div>
                 </div>
             </div>
-
-        <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
 
         <script>
                 var swiper = new Swiper(".mySwiper1", {
@@ -565,6 +561,7 @@
                 nextEl: '.swiper-next',
                 prevEl: '.swiper-prev',
                 },
+                
                 pagination: {
                     el: ".swiper-pagination",
                     clickable: true,
@@ -575,8 +572,8 @@
                 slidesPerView: 1,
                 spaceBetween: 30,
                 navigation: {
-                nextEl: '.swiper-next',
-                prevEl: '.swiper-prev',
+                nextEl: '.swiper-next5',
+                prevEl: '.swiper-prev5',
                 },
 
                 });

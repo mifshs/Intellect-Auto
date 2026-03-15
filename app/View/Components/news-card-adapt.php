@@ -11,9 +11,12 @@ class newsCardAdapt extends Component
     /**
      * Create a new component instance.
      */
-    public function __construct()
+
+    public $news_page;
+
+    public function __construct($news_page)
     {
-        //
+        $this->news_page = $news_page;
     }
 
     /**
