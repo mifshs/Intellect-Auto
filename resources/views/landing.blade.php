@@ -534,10 +534,10 @@
                 <div class="swiper mySwiper1 container">
                     <div class="swiper-wrapper pb-10">
                         @foreach($news_pages as $news_page)
-                        <div class="swiper-slide"><x-news-card :news_page="$news_page"></x-news-card></div>
+                        <div class="swiper-slide w-[313px] h-[368px]"><x-news-card :news_page="$news_page"></x-news-card></div>
                         @endforeach
                         @foreach($news_pages as $news_page)
-                        <div class="swiper-slide"><x-news-card :news_page="$news_page"></x-news-card></div>
+                        <div class="swiper-slide w-[313px] h-[368px]"><x-news-card :news_page="$news_page"></x-news-card></div>
                         @endforeach
                     </div>
                 </div>
